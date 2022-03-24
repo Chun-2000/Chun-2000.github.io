@@ -1,6 +1,6 @@
 我義軍
 
-[我的GitHub Pages首頁]()
+[我的GitHub Pages首頁](https://chun-2000.github.io/index.html)
 
 markdown 語法規則
 ===
