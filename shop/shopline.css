@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+i{
+    color: aqua;
+}
+
+a{ /* 初始設定每個a */
+    text-decoration: none; /* 文字中不要有任何裝型(例如底線) */
+    display: inline-block;
+    transition: 0.5s; /* 動畫 */
+}
+
+nav a:hover{ /* 網頁中每個按鈕摸到就變色的統一顏色 */
+    color:aqua;
+}
+
+/* EpidemicBox 表示為"防疫專區" */
+.EpidemicBox_wrap{ 
+    height: 36.2px;
+    background-color: #fe7200;
+    display: flex;
+}
+
+.EpidemicBox{
+    font-size: x-small;
+    font-weight: bolder;
+    color: aliceblue;
+    text-align: center;
+    margin: auto; /* 剩餘空間分配 */
+}
+
+/* topnav 表示為"頂部導航" */
+.topnav_wrap{
+    background-color: #00142d;
+}
+
+.topnav{
+    width: 1264px;
+    text-align: right; 
+    font-size: 0px;
+    margin: auto;
+}
+
+.tppnav_a{
+    color:  aliceblue;
+    padding: 6px 20px;
+    font-size: 16px;
+}
+
+/* mainbav表示為 "主導航" */
+.mainbav_wrap{
+    background-color: #ffffff;
+}
+
+.mainbav{ 
+    width: 1264px;
+    height: 80px;
+    font-size: x-small;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:space-between;
+    margin: auto;
+}
+
+.mainbav_a{
+    color:black;
+    padding: 6px 20px;
+    font-size: 16px;
+    margin: auto;
+    flex-grow: 9;
+}
+
+/* Blackboard 表示"大公佈欄" */
+.Blackboard_wrap{
+    background-color: rgb(0, 20, 45);
+}
+.Blackboard{ 
+    width: 1264px;
+    height: 690px;
+    font-size:medium;
+    font-weight: bolder;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.Blackboard div{
+    margin-top: 50px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.Blackboard h1{
+    font-size: 40px;
+}
+
+.Blackboard h2{
+    font-size: 40px;
+    color: #00c66a;
+}
+
+.Blackboard img{
+    margin: auto;
+}
+
+/* Whiteboard 表示"介紹區" */
+.Whiteboard_wrap{
+    background-color: #ffffff;
+}
+
+.Whiteboard{
+    width: 1280px;
+    height: 1500px;
+    text-align: center;
+    margin: auto;
+}
+
+.Whiteboard div{
+    padding: 6px 20px;
+}
+
+.row{
+    display: flex;
+}
+.row:nth-child(even){
+    flex-direction: row-reverse;
+}
+.row .pic{
+    width: 480px;
+    margin: 10px;
+}
+.row .pic img{
+    width: 100%;  /* 滿版(複層一樣大) */
+}
+.row .txt{
+    width: 480px;
+    margin: 10px;
+}
+
+.list{
+    width: 500px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list div{
+    text-align:left;
+    width: 200px;
+    margin-top: 10px;
+}
+
+/* GreyBoard 表示"更多功能與服務"欄 */
+.GreyBoard_wrap{
+    background-color: #f4f5f7;
+}
+
+.GreyBoard{
+    width: 1264px;
+    height: 908.69px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.GreyBoard h2{
+    font-size: 35px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.GreyBoard div{
+    margin: auto;
+    width: 350px;
+    margin-top: 10px;
+}
+
+/*Recommend 表"推薦欄"*/
+.Recommend_wrap{
+    background-color: rgb(255, 255, 255);
+}
+
+.Recommend{
+    width: 1264px;
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin: auto;
+}
+
+.Recommend p{
+    margin-top: 100px;
+}
+
+.Recommend img{
+    margin-top: 50px;
+}
