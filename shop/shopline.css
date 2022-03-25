@@ -22,6 +22,8 @@ nav a:hover{ /* 網頁中每個按鈕摸到就變色的統一顏色 */
     height: 36.2px;
     background-color: #fe7200;
     display: flex;
+    /* position:fixed; */
+
 }
 
 .EpidemicBox{
