@@ -50,6 +50,10 @@ nav a:hover{ /* 網頁中每個按鈕摸到就變色的統一顏色 */
     font-size: 16px;
 }
 
+.topnav i{
+    color:aliceblue;
+}
+
 /* mainbav表示為 "主導航" */
 .mainbav_wrap{
     background-color: #ffffff;
