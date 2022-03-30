@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-weight: 100;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 960px;
+    height: 900px;
+    margin: auto;
+}
+
+
+
+/*/////////////////// "introduction" 是簡介區 ///////////////////*/
+.introduction,.introduction_even{
+    color: #fff;
+    width: 355px;
+}
+.title{
+    display: flex;
+    font-size: 29px;
+    background-color: rgb(187, 4, 4);
+    height: 177px;
+
+}
+.number{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:100;
+    letter-spacing: 5px;
+    font-size: 158px;
+    transform: rotate(90deg);
+
+}
+.title h2{
+    margin: auto;
+}
+
+
+.Info{
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+/*/////////////////// "txt"是介紹革新概念區 ///////////////////*/
+.txt,.txt_even{
+    width: 682px;
+    background-color: #eeeeee;
+    padding: 15px;
+    
+}
+.txt h4,.txt_even h4{
+    color: rgb(187, 4, 4);
+}
+.line{
+    display: inline-block;
+    width: 450px;
+    border: 1px solid rgb(187, 4, 4);
+}
+
+span{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+}
+
+/*/////////////////// "decoration" 是裝飾 ///////////////////*/
+.decoration,.decoration_even{
+    width: 439px;
+    height: 290px;
+    background-color: #eeeeee;
+}
+
+
+
+/*/////////////////// 移動位子 ///////////////////*/
+/* 單數位子 */
+.decoration{
+    position: relative;
+    top: 23px;
+    left: 520px;
+}
+.picture{
+    position: relative;
+    top: -113px;
+    left: 198px;
+}
+.txt{
+    position: relative;
+    top: -176px;
+    left: 34px;
+}
+.introduction{
+    position: relative;
+    top: -952px;
+}
+.vidio{
+    width: 57px;
+    height: 36px;
+    position: relative;
+    top: -586px;
+    left: 506px;
+}
+/* 雙數位子 */
+.decoration_even{
+    position: relative;
+    top: 23px;
+    left: 263px;
+}
+.picture_even{
+    position: relative;
+    top: -113px;
+    left: 25px;
+}
+.txt_even{
+    position: relative;
+    top: -176px;
+    left: 248px;
+}
+.introduction_even{
+    position: relative;
+    top: -952px;
+    left: 605px;
+}
+.vidio_even{
+    width: 57px;
+    height: 36px;
+    position: relative;
+    top: -586px;
+    left: -356px;
+}
+
