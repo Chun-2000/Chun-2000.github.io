@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .img{
+            width: 200px;
+        } */
+        
+        .picturestyle{
+            width: 200px;
+        }
+        .otherpicturestyle{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <img id="imagel" src="" alt="">
+    
+
+    <script>
+        let h1 = document.querySelector("h1");
+        let img = document.getElementById("imagel");
+
+        let moviename = "尖叫旅社";
+        const movieUrl = "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2021/08/17/realtime/13361640.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=1050";
+
+        h1.innerText = moviename;
+        // img.src = movieUrl;
+
+        img.setAttribute("src", movieUrl);
+        img.setAttribute("alt",moviename);
+        img.setAttribute("class","picturestyle");
+        document.write("<br>");
+        document.write("姓名: Gigi<br>");
+        document.write("學校: 中字輩大學<br>");
+        document.write("Email: gg@g.chu.edu.tw<br>");
+        document.write("興趣: 看小說<br>");
+        
+
+
+        const imageArray = [
+            "https://img.onl/yZaHJE",
+            "https://img.onl/A0LRsL",
+            "https://img.onl/83TRbq",
+        ];
+
+
+        
+        imageArray.forEach((item, index) =>{
+            let url = item;
+            document.write(`<img src=${url} >` + "<br>");
+            // .setAttribute("class","otherpicturestyle");
+        });
+
+    </script>
+</body>
+</html>
