@@ -1,0 +1,25 @@
+/* blackboard 表示"大公佈欄" */
+.blackboard_wrap{
+    background-color: rgb(0, 20, 45);
+}
+
+.blackboard img,.blackboard .txt{
+    width: calc(100% - 5% * 2);
+    padding: 5%;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.blackboard h1, .blackboard h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.blackboard h1{
+    font-size: 28px;
+}
+
+.blackboard h2{
+    font-size: 25px;
+    color: #00c66a;
+}

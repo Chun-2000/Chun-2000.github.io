@@ -1,0 +1,62 @@
+/* Whiteboard 表示"介紹區" */
+.whiteboard_wrap{
+    background-color: #fff;
+}
+
+.whiteboard .title, .whiteboard .row .txt .list{
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.whiteboard .title h2, .whiteboard .row .txt h3{
+    font-size: 30px;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+
+.whiteboard .row .pic{
+    height: 100%;
+}
+
+.whiteboard .row .pic img{
+    width: calc(100% - 5% * 2);
+    padding: 5%;
+}
+
+.whiteboard .row .txt{
+    width: 100%;
+    padding: 0;
+}
+
+.whiteboard .row .txt p{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+
+.whiteboard .row .txt .list{
+    text-align: left;
+    line-height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.whiteboard .row .txt .list i{
+    width: 15px;
+    height: 15px;
+    background-color: #0061ff;
+    margin: auto;
+    color: #7bc8d4;
+    margin-right: 15px;
+    border-radius: 30px;
+}
+
+.whiteboard .row .txt a{
+    font-size: 17px;
+    color: #0061ff;
+}

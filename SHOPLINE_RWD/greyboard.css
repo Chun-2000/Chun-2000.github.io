@@ -1,0 +1,23 @@
+/* greyboard 表示"更多功能與服務"欄 */
+.greyboard_wrap{
+    background-color: #f4f5f7;
+}
+
+.greyboard h2{
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.greyboard h2, .greyboard h3{
+    text-align: center;
+}
+
+.greyboard .pic img{
+    width: calc(100% - 25% * 2);
+    padding: 25%;
+}
+
+.greyboard .txt{
+    line-height: 30px;
+    padding: 0;
+}
