@@ -1,0 +1,30 @@
+/* top-nav 表示為"頂部導航" */
+/* 父層不須設定高(被子層內容撐開) */
+.top-nav_wrap{
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 20, 45);
+    display: none;
+}
+
+.top-nav{
+    text-align: right;
+    height: 40px;
+}
+
+.top-nav a, .top-nav span{
+    color:#fff;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.globe{
+    margin-right: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .top-nav_wrap{display: block;}
+}

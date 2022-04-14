@@ -1,0 +1,52 @@
+/* greyboard 表示"更多功能與服務"欄 */
+.greyboard_wrap{
+    background-color: #f4f5f7;
+}
+
+.greyboard h2{
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.greyboard h2, .greyboard h3{
+    text-align: center;
+}
+
+.greyboard .pic{
+    border-radius:50%;
+}
+
+.greyboard .pic img{
+    width: calc(100% - 25% * 2);
+    padding: 25%;
+}
+
+.greyboard .txt{
+    line-height: 30px;
+    padding: 0;
+}
+
+@media screen and (min-width: 425px) {
+    .greyboard .pic img{
+        width: calc(100% - 30% * 2);
+        padding: 30%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .greyboard .pic img{
+        width: calc(100% - 35% * 2);
+        padding: 35%;
+    }
+    .greyboard .txt{
+        line-height: 40px;
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media screen and (min-width: 1540px) {
+    .greyboard .pic img{
+        width: calc(100% - 40% * 2);
+        padding: 40%;
+    }
+}

@@ -1,0 +1,51 @@
+/* blackboard 表示"大公佈欄" */
+.blackboard_wrap{
+    /* 上面一列 "top-nav"(position: fixed) 占的空間為 60px */
+    margin-top: 60px;
+    background-color: rgb(0, 20, 45);
+}
+
+.blackboard img{
+    width: calc(100% - 5% * 2);
+    padding: 5%;
+}
+
+.blackboard .txt{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 109.12%;
+    line-height: 30px;
+}
+
+.blackboard h1, .blackboard h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.blackboard h1{
+    font-size: 170%;
+}
+
+.blackboard h2{
+    font-size: 160%;
+    color: #00c66a;
+}
+
+@media screen and (min-width: 768px) {
+    .blackboard h1,
+    .blackboard h2{
+        font-size: 230%;
+        text-align:left;
+        line-height: 130%;}
+}
+
+@media screen and (min-width: 1024px) {
+    .blackboard h1,
+    .blackboard h2{
+        font-size: 228%;
+        text-align:left;
+        line-height: 130%;}
+    .blackboard_wrap{
+        /* 上面兩列 "top-nav" 和 "main-nav" (position: fixed) 占的空間為 100px */
+        margin-top: 100px;}
+}

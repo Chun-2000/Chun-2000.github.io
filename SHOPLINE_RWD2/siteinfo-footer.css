@@ -1,0 +1,118 @@
+
+.siteinfo-footer_warp{
+    background-color: rgb(0, 20, 45);
+    color: #fff;
+}
+
+/* siteinfo 的 地球圖案區域 */
+.siteinfo h4{
+    font-size: 230%;
+}
+
+.siteinfo .line{
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid transparent;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.siteinfo-footer_warp img{
+    width: 300px;
+}
+
+.siteinfo_btn {
+    background-color: #0061ff;
+    padding: 12px 140px;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+.siteinfo_btn:hover{
+    background-color: darkblue;
+}
+
+/* siteinfo 的 list區域 */
+.introduce,
+.operate,
+.feature,
+.data,
+.solution,
+.other,
+.case{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+}
+
+[class*='_menu']{
+    width: 100%;
+    background-color: rgb(0, 20, 45);
+    left: 0;
+    top: 100%;
+    display: none;
+}
+
+[id*='_control']{
+    display: none;
+    position: absolute;
+    z-index: 10px;
+}
+
+#introduce_control:checked ~ .introduce_menu,
+#operate_control:checked ~ .operate_menu,
+#feature_control:checked ~ .feature_menu,
+#data_control:checked ~ .data_menu,
+#solution_control:checked ~ .solution_menu,
+#other_control:checked ~ .other_menu,
+#case_control:checked ~ .case_menu{
+    display: block;
+}
+
+.siteinfo h5, .siteinfo i{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+[class*='_menu'] a{
+    display: block;
+    padding: 10px 20px;
+    color: #748094;
+}
+
+[class*='_menu'] a:hover{
+    color: #fff;
+}
+
+@media screen and (min-width: 992px){
+    .down{
+        display: none;
+    }
+
+    [class*='_menu']{
+        display: block;
+    }
+
+    [class*='_menu'] a{
+        padding: 10px 0px;
+    }
+
+    .siteinfo [class*='col-']{
+        /* 將原來 margin 上下置中的效果拿掉~ */
+        margin: 0;
+    }
+}
+
+/* 防疫專區 */
+.COVID-19_btn{
+    background-color: #dbf8ed;
+    padding: 12px 140px;
+    font-size: 18px;
+}
+
+.COVID-19_btn:hover{
+    background-color: #6d9283;
+}
+

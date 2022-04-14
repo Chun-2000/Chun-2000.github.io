@@ -1,0 +1,35 @@
+/*recommend 表"推薦欄"*/
+.recommend_wrap{
+    background-color: #fff;
+}
+
+.recommend h2{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.recommend h2 span, .recommend a{
+    color: #0061ff;
+}
+
+.recommend img{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.recommend .txt{
+    margin: auto;
+}
+
+.recommend a{
+    font-size: 20px;
+}
+
+.recommend p{
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
