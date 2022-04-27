@@ -14,6 +14,7 @@
                 --gap: 10px;
                 --gap2 : 20px;
             }
+            .col-2_1{width: 20%;}
             .container{
                 width: 400px;
                 margin-top: 100px;
@@ -22,91 +23,180 @@
                 text-align: center;
             }
             .machine{
+                background:radial-gradient(circle farthest-corner at left,#ffa0a0,#ADF0C0);
                 padding: var(--gap2);
-                border: 1px solid black;
+                border: 1px solid #b1cb3d;
+                border-radius: 30px;
             }
             [class*='col-']{
                 padding: var(--gap);
             }
+
+            .input{
+                border-radius: 30px;
+                background:radial-gradient(ellipse at center,rgb(255, 255, 255),rgb(190, 190, 190));
+            }
+
             .btn{
                 width: 100%;
+                box-shadow:4px 7px 6px 1px #978989;
+                font-weight: 900;
+            }
+
+            .number, .point{
+                border-radius: 30px;
+                color: #fff;
+            }
+            
+            .btn-teal {
+                color: #fff;
+                background:radial-gradient(circle farthest-corner at left,#20c997,#34ad89);
+                border-color: #20c997;
+            }
+            .btn-danger{
+                background-color: #fd6d6d;
+                border-color: #20c997;
+            }
+            .btn-blue{
+                color: #fff;
+                background-color: #2F7059;
+                border-color: #20c997;
+            }
+            .btn-dark{
+                color: #fff;
+                background-color: #517065;
+                border-color: #20c997;
             }
         </style>
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+        <script src="https://kit.fontawesome.com/1a54ee6640.js" crossorigin="anonymous"></script>
+
         <div class="container">
             <h1>計算機</h1>
-            <div class="machine">
+            <div class="machine"  style="box-shadow:3px 3px 5px 6px #cccccc;">
                 <div class="input-group mb-3">
-                    <!-- <span class="input-group-text" id="inputGroup-sizing-default">Default</span> -->
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <input type="text" class="input form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </div>
                 <div class="row">
                     
                     <div class="col-6">
-                        <button class="btn btn-danger" type="button" >c</button>
+                        <button class="reset btn btn-danger" type="button" ><i class="fa-solid fa-c"></i></button>
                     </div>
                     <div class="col-3">
-                        <button class="btn btn-warning" type="button" >></button>
+                        <button class="clear_one btn btn-warning" type="button" ><i class="fa-solid fa-delete-left"></i></button>
                     </div>
                     <div class="col-3">
-                        <button class="btn btn-primary" type="button" >+</button>
-                    
-                    
+                        <button class="addition btn btn-blue" type="button" ><i class="fa-solid fa-plus"></i></button>
+                        <!-- + -->
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >1</button>
+
+                    <div class="col-2_1">
+                        <button class="btn btn-teal" type="button">x²</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >2</button>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark"  type="button" >1</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >3</button>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >2</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary" type="button" >-</button>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >3</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >4</button>
+                    <div class="col-2_1">
+                        <button class="btn btn-blue" type="button" ><i class="fa-solid fa-minus"></i></button>
+                        <!-- - -->
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >5</button>
+                    <div class="col-2_1">
+                        <button class="btn btn-teal" type="button" ><i class="fa-solid fa-square-root-variable"></i></button>
+                        <!-- 根號 -->
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >6</button>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >4</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary" type="button" >x</button>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >5</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >7</button>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >6</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >8</button>
+                    <div class="col-2_1">
+                        <button class="btn btn-blue" type="button" ><i class="fa-solid fa-xmark"></i></button>
+                        <!-- * -->
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >9</button>
+                    <div class="col-2_1">
+                        <button class="btn btn-teal" type="button" >x<sup>y</sup></button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary" type="button" >/</button>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >7</button>
                     </div>
-                    <div class="col-3">
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >8</button>
+                    </div>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >9</button>
+                    </div>
+                    <div class="col-2_1">
+                        <button class="btn btn-blue" type="button" ><i class="fa-solid fa-divide"></i></button>
+                        <!-- / -->
+                    </div>
+                    <div class="col-2_1">
                         <button class="btn btn-success" type="button" >=</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-dark" type="button" >0</button>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >00</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-info" type="button" >.</button>
+                    <div class="col-2_1">
+                        <button class="number btn btn-dark" type="button" >0</button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary" type="button" >%</button>
+                    <div class="col-2_1">
+                        <button class="point btn btn-info" type="button" >•</button>
+                    </div>
+                    <div class="col-2_1">
+                        <button class="btn btn-blue" type="button" ><i class="fa-solid fa-percent"></i></button>
+                        <!-- % -->
                     </div>
                 </div>
             </div>
 
         </div>
+
+
+        <script>
+            let inputNumber;
+            let input = document.querySelector(".input");
+            let numbers = document.querySelectorAll(".number");
+
+            let reset = document.querySelector(".reset");
+            let clear_one = document.querySelector(".clear_one");
+
+            let addition = document.querySelector("addition");
+
+            numbers.forEach( number=>{
+                number.addEventListener('click', ()=>{
+                    input.value += event.target.innerText;
+                    inputNumber = input.value;
+                    reset.innerText = "CE";
+                });
+            });
+            
+            reset.addEventListener('click', ()=>{
+                input.value = "";
+                reset.innerHTML = `<i class="fa-solid fa-c"></i>`;
+            });
+
+            clear_one.addEventListener('click', ()=>{
+                // input.value = event.target.innerText.lastChild;
+            });
+
+            addition.addEventListener('click', ()=>{
+                // input.value = `答案${inputNumber}`;
+            });
+
+            
+
+        </script>
     </body>
 </html>
