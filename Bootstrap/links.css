@@ -1,0 +1,37 @@
+.links{
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link_logo i{
+    font-size: 30px;
+    color: #6c757d;
+    margin-bottom: var(--gap-top_small);
+}
+
+.link_logo i:hover{
+    color: #0d6efd;
+}
+
+.h4{
+    color: #6c757d;
+}
+
+li{
+    list-style-type: none; 
+}
+
+li a, .links p, .links p a{
+    color: #6c757d;
+    text-decoration:none;
+}
+
+li a:hover, .links p a:hover{
+    color: #0d6efd;
+    text-decoration:underline;
+}
