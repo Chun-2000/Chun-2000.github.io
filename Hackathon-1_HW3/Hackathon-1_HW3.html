@@ -61,17 +61,6 @@
                 <button class="guess btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">猜!</button>
             </div>
 
-            
-
-            
-
-            <!-- <div class="spinner-border text-secondary" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            <div class="spinner-grow spinner-grow-sm text-secondary" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div> -->
-
         </div>
 
         <script>
@@ -109,7 +98,6 @@
                                         <span class="visually-hidden">Loading...</span>
                                     </div>`;
                 
-                //字串轉陣列 + 判斷是否重複字元 => 如果傳回為 true 表示重複字元
                 if(CheckIsRepeatChar(Change(input.value)) == true){
                     alert("錯誤!請輸入四個不同數字");
                 }
@@ -151,20 +139,15 @@
                 randomList = Math.floor(Math.random() * 9) + 1;
 
                 var solution = '';
-                //宣告一個變數用來裝隨機產生的數字
                 var n = 0;
                 for(i=0;i<4;i++){
-                    //產生0~9數字
                     n = Math.floor(Math.random() * 9);
-                    //用indexOf判斷該數字之前有沒有出現過
-                    if(solution.indexOf(`${n}`)!= -1){ //因為 typeof(n) = number 所以要將其改為字串(如果不用這招就會判斷錯誤)
-                        //如果有出現過就重跑一次迴圈
-                        i-=1;//扣除一步
+                    if(solution.indexOf(`${n}`)!= -1){
+                        i-=1;
                         debugger;
                         continue;
                     }
                     else{
-                        //沒出現過的話就寫進字串裡
                         solution += n;
                     };
                 };
@@ -172,7 +155,7 @@
             };
         
             function Change(numberString){
-                numberArray = numberString.split(''); //將字串切開加入Array
+                numberArray = numberString.split('');
                 return numberArray;
             }
 
@@ -197,16 +180,12 @@
                 A = 0,B = 0;
 
                 for(let i=0;i<4;i++){
-                    //如果答案包含輸入字元 B++
                     if (answer.includes(input[i])){
-                        // alert("答案包含輸入字元: " + input[i]);
                         B++;
                     }
                 }
                 for(let i=0;i<4;i++){
-                    //如果連位子都完全符合 A++,B--
                     if (input[i] === answer[i]){
-                        // alert("陣列相同位子內容: " + input[i]);
                         A++;
                         B--;
                     }
