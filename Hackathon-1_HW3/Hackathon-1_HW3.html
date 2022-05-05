@@ -11,10 +11,6 @@
 
         <link rel="stylesheet" href="Hackathon-1_HW3.css">
 
-        <link rel="stylesheet" type="text/css" href="../advanced-notification-sound-effects-pexxalert/pexx.alert.css">
-        <!-- <script type="text/javascript" src="path-to-js/jquery.js"></script> -->
-        <script type="text/javascript" src="../advanced-notification-sound-effects-pexxalert/pexx.alert.js"></script>
-
         <title>幾A幾B</title>
     </head>
     <body>
@@ -23,7 +19,7 @@
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-        <script src="https://kit.fontawesome.com/1a54ee6640.js" crossorigin="anonymous"></script>
+        
 
 
         
@@ -38,12 +34,41 @@
             
 
             <ul class="list-group list-group-flush border" style="overflow:auto; height: 150px;">
+                <li class="list-group-item"><span class="badge bg-success">Success</span>An item</li>
+                <li class="list-group-item"><span class="badge bg-danger">Danger</span>A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+                <li class="list-group-item"><span class="badge bg-success">Success</span>An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+                <li class="list-group-item"><span class="badge bg-success">Success</span>An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
             </ul>
 
             <div class="input-group was-validated">
                 <label class="input-group-text" for="inputGroupSelect01">猜答案</label>
-                <input type="text" class="input form-control is-invalid" type="password" aria-label="Text input with segmented dropdown button" placeholder="請輸入四個不同數字" maxlength="4" minlength="4" disabled required>
+                <input type="text" class="input form-control" type="password" aria-label="Text input with segmented dropdown button" pattern="^[0-9]{4,4}$" maxlength="4" minlength="4"  disabled required>
                 <button class="guess btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">猜!</button>
+            </div>
+
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img src="http://i.stack.imgur.com/SBv4T.gif" class="rounded me-2" alt="this slowpoke moves"  width="100" />
+                        <strong class="me-auto">Warn</strong>
+                        <small>10 sec ago</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Hello... Hurry up ! Hurry up !
+                    </div>
+                </div>
             </div>
 
         </div>

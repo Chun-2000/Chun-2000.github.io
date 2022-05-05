@@ -11,7 +11,10 @@ let correct_answer = 0;
 let numberArray = []; //typeof(numberArray) = object
 let A = 0;
 let B = 0;
+
+var toastLiveExample = document.getElementById('liveToast')
 reset();
+
 
 start.addEventListener('click',()=>{
     unlock();
@@ -26,22 +29,26 @@ solution.addEventListener('click',()=>{
     alert(`答案為 ${correct_answer}`);
 });
 
+// keydown 事件 => 用户按下鍵盤按键 即可觸發
+input.addEventListener('keydown',()=>{
+    guess.innerHTML = `<div class="spinner-grow spinner-grow-sm text-secondary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>`;
+    pass();
+})
+
 guess.addEventListener('click',()=>{
-    
     if(CheckIsRepeatChar(Change(input.value)) == true){
         alert("錯誤!請輸入四個不同數字");
     }
     else{
         if(correct_answer === input.value){
-            guess.innerText = "猜!"; 
             alert(`恭喜你答對了~\n5秒後更新`);
             TextArea.innerHTML += `<li class="list-group-item"><span class="badge bg-success">4A0B</span>${input.value}</li>`;
             setTimeout(`alert('重新開始!'); reset();`,5000);
-            
         }
         else{
             CheckIsDifferent4Char(Change(input.value),Change(correct_answer));
-            guess.innerText = "猜!";
             TextArea.innerHTML += `<li class="list-group-item"><span class="badge bg-danger">${A}A${B}B</span>${input.value}</li>`;
         }
     }
@@ -54,7 +61,7 @@ function reset(){
     replay.setAttribute('disabled', true);
     solution.setAttribute('disabled', true);
     input.setAttribute('disabled', true);
-    input.removeAttribute('is-invalid');
+    guess.setAttribute('disabled', true);
 }
 
 function unlock(){
@@ -62,7 +69,7 @@ function unlock(){
     replay.removeAttribute('disabled');
     solution.removeAttribute('disabled');
     input.removeAttribute('disabled');
-    
+    input.setAttribute('placeholder', "請輸入四個不同數字");
 }
 
 function Random4Number() {
@@ -119,5 +126,18 @@ function CheckIsDifferent4Char(input, answer){
             A++;
             B--;
         }
+    }
+}
+
+function pass(){
+    // 因為目標要按下第4下按鍵 就出現"guess"按鈕 (會比預想的多按一下 => 所以設 3)
+    if(input.value.length == 3){
+        guess.removeAttribute('disabled');
+        guess.innerText = "猜!"; 
+    }
+    else{
+        guess.setAttribute('disabled', true);
+        setTimeout(`var toast = new bootstrap.Toast(toastLiveExample);toast.show();`,10000);
+        return;
     }
 }
