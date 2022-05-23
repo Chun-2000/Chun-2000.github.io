@@ -1,0 +1,32 @@
+.main-pic img{
+    width: 100%;
+    padding: 50px;
+}
+.d-flex p, h3{
+    font-size: 25px;
+}
+.main-specs h2{
+    font-size: 44px;
+}
+.main-specs button{
+    height: 103px;
+    width: 45%;
+    margin: 2.5%;
+    background-color: white;
+    border-radius:15px;
+    border: 1px solid rgba(0, 0, 0, 0.167);
+}
+.main-specs button:hover{
+    border: 1px solid rgb(89, 89, 89);
+}
+.main-specs .choosed{
+    border: 2px solid #0071e3;
+}
+.main-specs .choosed:hover{
+    border: 2px solid #0071e3;
+    box-shadow:0px 0px 0px 5px #0071e379;
+    transition: all .1s linear;
+}
+.main-specs .color button img{
+    width: 32px;
+}
