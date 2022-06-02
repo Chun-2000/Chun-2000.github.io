@@ -1,0 +1,30 @@
+:root{
+    --bg:#F0F0F0;
+    --bg2:#e60012;
+    --gap: 2em;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+main,footer{
+    margin: auto;
+    padding: var(--gap);
+}
+
+h4{
+    font-size: xx-small;
+}
+
+/* 當超過上限螢幕大小時，寬固定 */
+@media screen and (min-width:1540px) {
+    .container{width: 1200px;}
+}
+
+
+.background{
+    width: 100%;
+    height: 5em;
+    background-color: var(--bg2);
+}
