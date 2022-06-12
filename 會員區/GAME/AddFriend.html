@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../GAME/css/forum.css">
+    <link rel="stylesheet" href="./css/Friend.css">
+    <title>新增好友</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-box">
+            <nav class="header-box-nav">
+                <div class="header-box-nav-content">
+                    <button class="btn header-box-nav-content-collapse">
+                        <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
+                    </button>
+                    <ul class="list-group header-box-nav-content-tours">
+                        <li class="list-tour-home" style="--clr:#f44336">
+                            <a href="#home">
+                                <span class="icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span>首頁</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-shop" style="--clr:#ffa500">
+                            <a href="#shop">
+                                <span class="icon">
+                                    <ion-icon name="storefront-outline"></ion-icon>
+                                </span>
+                                <span>商店</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-game" style="--clr:#FFD700">
+                            <a href="#game">
+                                <span class="icon">
+                                    <ion-icon name="game-controller-outline"></ion-icon>
+                                </span>
+                                <span>遊戲庫</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-forum active" style="--clr:#0fc70f">
+                            <a href="#forum">
+                                <span class="icon">
+                                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                                </span>
+                                <span>論壇</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-friend " style="--clr:#2196f3">
+                            <a href="#friend">
+                                <span class="icon">
+                                    <ion-icon name="people-outline"></ion-icon>
+                                </span>
+                                <span>好友</span>
+                            </a>
+                        </li>
+                        <li class="list-tour-about" style="--clr:#b145e9">
+                            <a href="#about">
+                                <span class="icon">
+                                    <ion-icon name="help-circle-outline"></ion-icon>
+                                </span>
+                                <span>關於我們</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-box-tool">
+                <div class="nav-toggler"></div>
+                <ion-icon class="sidebar-toggler" name="arrow-forward-outline"></ion-icon>
+                <a href="#LOGO" class="navbar-brand logo h1">SOLO GAME</a>
+                <form class="form-inline search-form">
+                    <input class="form-control " type="search" placeholder="搜尋">
+                    <button class="btn search-form-btn" type="button"></button>
+                </form>
+                <div class="navbar-brand header-box-tool-end">
+                    <div class="dropdown">
+                        <button class="bell" type="button" id="bell-list" data-toggle="dropdown"
+                            aria-expanded="false" data-offset="-120,0"></button>
+                        <div class="dropdown-menu" aria-labelledby="bell-list">
+                            <div href="#" class="dropdown-item">訊息1</div>
+                            <div href="#" class="dropdown-item">訊息2</div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="login" type="button" id="user-list" data-toggle="dropdown"
+                            aria-expanded="false" data-offset="-120,0"></button>
+                        <div class="dropdown-menu" aria-labelledby="user-list">
+                            <a href="#" class="dropdown-item">註冊登入</a>
+                            <a href="#" class="dropdown-item">個人資料</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="forum" class="container-fluid">
+        <div class="container">
+            <div class="main__title row">
+                <div class="img  col-md-1">
+                    <img src="https://picsum.photos/50/50/?random=10">
+                </div>
+                <div class="title col-md-11">
+                    <h1>{帳號名稱}</h1>
+                </div>
+            </div>
+
+            <div class="main__friendslist row">
+                <div class="main__sidepanel col-12 col-md-3">
+                    <h4>好友</h4>
+                    <a class="dropdown-item" href="./FriendsList.html">您的好友</a>
+                    <a class="dropdown-item" href="./AddFriend.html">新增好友</a>
+                    <a class="dropdown-item" href="./PendingInvites.html">待處理的邀請</a>
+                    <a class="dropdown-item" href="./Blocked.html">已封鎖</a>
+
+                    <hr>
+
+                    <h4>群組</h4>
+                    <a class="dropdown-item" href="./GroupCreate.html">您的群組</a>
+                    <a class="dropdown-item" href="./PendingInvitesGroups.html">待處理的邀請</a>
+                    <a class="dropdown-item" href="./FindGroup.html">尋找群組...</a>
+                    <a class="dropdown-item" href="./GroupCreate.html">建立群組...</a>
+                </div>
+
+                <div class="main__content col-12 col-md-9">
+                    <h1 class="col-12 col-md-4">新增好友</h1>
+                    <div class="main__content--friend_code row">
+                            <h2 class="col-12">您的好友代碼</h2>
+                                <div class="code col-5 col-md-7">{132343476}</div>
+                                <button type="button" class="btn btn-info col-7 col-md-2">複製</button>
+                                
+                                <p class="col-md-7">輸入您好友的好友代碼，邀請他們成為好友。</p>
+                                <input class="form-control col-md-8" type="search" placeholder="輸入好友代碼" aria-label="Search">
+                                <p class="col-md-12">或嘗試搜尋您的好友</p>
+                                <input class="form-control col-md-8" type="search" placeholder="輸入您好友的個人檔案名稱" aria-label="Search">
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cdc90ce112.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/forum.js"></script>
+</body>
+
+</html>
