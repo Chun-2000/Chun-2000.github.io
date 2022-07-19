@@ -1,0 +1,29 @@
+[
+    {
+        "WishId":"7",
+        "GameSlides":"./images0/0s.jpg",
+        "GameName":"1 Half-Life: Alyx",
+        "ReleaseTime":"2020 年 3 月 24 日", 
+        "GamePrice":"850", 
+        "Typelist":["虛擬實境", "第一人稱射擊", "劇情豐富", "恐怖女主人翁"],
+        "AddTime":"2020 年 3 月 24 日"
+    },
+    {
+        "WishId":"2",
+        "GameSlides":"./images1/0s.jpg",
+        "GameName":"2 FINAL FANTASY VII REMAKE INTERGRADE",
+        "ReleaseTime":"6 月 17 日", 
+        "GamePrice":"1,990", 
+        "Typelist":["角色扮演", "動作冒險", "劇情豐富", "動作角色扮演"],
+        "AddTime":"2020 年 1 月 4 日"
+    },
+    {
+        "WishId":"3",
+        "GameSlides":"./images2/0s.jpg",
+        "GameName":"3 DEATH STRANDING DIRECTOR'S CUT",
+        "ReleaseTime":"3 月 30 日", 
+        "GamePrice":"850", 
+        "Typelist":["角色扮演", "動作冒險", "劇情豐富", "動作角色扮演"],
+        "AddTime":"2020 年 2 月 24 日"
+    }
+]
